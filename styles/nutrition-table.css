@@ -1,0 +1,82 @@
+img {
+    max-width: 30vw;
+    max-width: 200px; 
+    width: 100%; 
+    min-width: 10vw;
+    display: block; 
+}
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: auto;
+}
+
+table td.right, th.right{
+    border-right: 1px solid black;
+}
+
+table td.left, th.left{
+    border-left: 1px solid black;
+}
+
+table td.down, th.down{
+    border-bottom: 1px solid black;
+}
+
+table td.up, th.up{
+    border-top: 1px solid black;
+}
+
+table td.all, th.all{
+    border: 1px solid black;
+}
+
+.drink-name{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgb(184, 177, 177);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.drink-size{ /*also applies to food just didn't want to change to a general name when copying table*/
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgba(175, 168, 168, 0.377);
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+@media screen and (max-width:688px) {
+    table{
+        width: 100%;
+        padding-right: 0em;
+        padding-left: 0em;
+    }
+}
+table th{
+    font-size: 90%;
+    width: auto;
+}
+
+@media screen and (max-width: 439px){
+    table{
+        font-size: 93%;
+    }
+}
+@media screen and (max-width: 417px){
+    table{
+        font-size: 88%;
+    }
+}
+@media screen and (max-width: 396px){
+    table{
+        font-size: 83%;
+    }
+}
+@media screen and (max-width: 375px){
+    table{
+        font-size: 73%;
+    }
+}

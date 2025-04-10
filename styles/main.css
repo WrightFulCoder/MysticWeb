@@ -1,0 +1,274 @@
+/*
+	Class:  CS 125H
+	Assign: Lab 8
+	Student: David Ringelspaugh
+	Date: 3/23/2025
+*/
+ul {
+    font-weight: bold;
+    padding-left: 1em;
+    list-style-type: none;
+}
+.menu-container {
+    width: 48%; 
+    float: left;
+    padding-left: 0; 
+    padding-right: 0;
+    margin-right: 2%; 
+    height: 100%;
+}
+.ul-image {
+    padding-left: 1em; 
+    padding-right: 0; 
+    padding-bottom: 0.8em; 
+    padding-top: 0.1em; 
+    border-top: solid 0.15em; 
+    display: inline-block; 
+    width: auto; 
+    list-style-type: none; 
+}
+
+
+
+/*html, .limited-p{
+    max-width: 1000px;
+    margin: 0 auto;
+}*/
+h1{
+    font-size: 1.75em;
+    color: rgb(71, 48, 18);
+    text-shadow: 2px 2px 8px brown;
+}
+h2{
+    font-size: 1.5em;
+}
+h3{
+    font-size: 1.125em;
+}
+
+main p {
+    font-style: italic;
+    text-align: center;
+    clear: both;
+    font-size: 1em;
+}
+
+/*used to limit where the span thing is applied*/
+#unique-1 span:hover{
+    display: inline-block;
+    transform-origin: bottom;
+    transform: scale(1.3);
+    vertical-align: bottom;
+}
+#invisible{
+    color:rgba(0, 0, 0, 0);
+}
+main h2 {
+    text-align: center;
+    clear: both;
+}
+main{
+    padding-top: 1px;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: antiquewhite;
+    border: 0.9vw solid rgb(211, 198, 182);
+    max-width: 100%;
+}
+header{
+    text-align: left;
+    background-color: rgb(218, 206, 206);
+    padding-bottom: 0.5em;
+    padding: 0.1em;
+    padding-top: 0px;
+    margin-bottom: 1vw;
+    margin-top: 3.5em;
+    border: 0.9vw solid rgb(201, 182, 182);
+    position: relative; top: 0px;
+}
+header h1{
+    margin-bottom: 0px;
+    margin-top: 1em;
+}
+header p, h1{
+    margin-left: 0.5em;
+}
+body{
+    background-color: rgb(119, 101, 101);
+    background-image: url(../images/bean-background.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: repeat; 
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 100%;
+}
+@media screen and (max-width: 566px) {
+    body{
+        padding-left: 4vw;
+        padding-right: 4vw;
+        margin-top: 0 !important;
+        text-align: center;
+    }
+    header{
+        border-color: rgb(218, 206, 206);
+        padding: 0 !important;
+        margin: 0 !important;
+        text-align: center;
+    }
+    main{
+        border-color: rgb(218, 206, 206);
+        column-count: 1 !important;
+    }
+    #nav_menu{
+      background-image: none !important;
+      padding: 0 0 2px 0 !important; 
+    }
+    #nav_menu ul{
+        background-color: rgb(218, 206, 206) !important;
+        width: 89% !important;
+    }
+    #nav_menu ul li{
+        background-color: rgb(218, 206, 206);
+        padding-bottom: 1vh;
+        padding-top: 0.2vh;
+    }
+    #edge_case{
+        border: none !important;
+    }
+    section ul {
+        color: rgb(0, 0, 0);
+        float: none !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+        text-align: center !important;
+        list-style-type: none;
+    }
+    div.menu-container{
+        width: 100% !important;
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+    .ul-image{
+        padding-left: 0;
+        list-style-type: none;
+        padding-bottom: 1em;
+    }
+}
+@media screen and (max-width: 439px){
+    #nav_menu{
+        font-size: 95%;
+    }
+}
+@media screen and (max-width: 417px){
+    #nav_menu{
+        font-size: 90%;
+    }
+}
+@media screen and (max-width: 396px){
+    #nav_menu{
+        font-size: 85%;
+    }
+}
+@media screen and (max-width: 375px){
+    #nav_menu{
+        font-size: 75%;
+    }
+}
+html{
+    height: 100%;
+}
+footer{
+    color:rgb(22, 22, 22);
+    background-color: #d3c6b6;
+    border: 1px solid;
+    border-color: #d3c6b6;
+    bottom: 0;
+    padding-left: 1em;
+    word-break: break-all;
+}
+
+/* Container for the two sections */
+.about-story-container {
+    display: flex;
+    justify-content:right;
+    gap: 2em;
+}
+
+/* Style for each section */
+.about-story-container section {
+    flex: 1;
+}
+
+/* Media query for mobile (adjust breakpoint as needed) */
+@media (max-width: 768px) {
+    .about-story-container {
+        flex-direction: column;
+    }
+}
+
+
+.bottom-margin{
+    margin-bottom: 50px;
+}
+
+#nav_menu{
+    float: none;
+    text-align: center;
+    overflow: hidden;
+    right: 0;
+    top: auto;
+    padding: 1em;
+    margin: 0em;
+    position: fixed; top: 0px;
+    width: 100%;
+    background-image: radial-gradient(circle, rgba(230, 230, 230, 100), rgb(255, 255, 255), rgb(230, 230, 230), rgb(255, 255, 255));
+}
+
+#nav_menu ul{
+    list-style: none;
+    width: 100%;
+    color: black;
+    margin-top: 0;
+    margin-left: 0;
+    margin: 0 auto;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#nav_menu ul li{
+    float: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    width: auto;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    border-right: 0.02em solid black;
+    border-left: 0.02em solid black;
+    text-align: center;
+    text-decoration: none;
+}
+
+#nav_menu a{
+    color: black;
+    text-decoration: none;
+}
+
+#nav_menu a:hover{
+    font-style: italic;
+    background-image: radial-gradient(rgba(158, 158, 158, 0.3), rgba(255, 255, 255, 0.10));
+
+}
+
+#nav_menu .current{
+    text-decoration:underline;
+    font-style: italic;
+}
+
+
+
+
+
+  
